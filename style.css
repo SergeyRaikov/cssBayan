@@ -10,7 +10,7 @@
 
 html {
     font-size: 10px;
-   
+
 }
 
 body {
@@ -23,6 +23,7 @@ body {
     width: 300px;
     margin: 0 auto;
 }
+
 /* Header*/
 
 .title {
@@ -34,20 +35,25 @@ body {
 
 /* Bayan */
 
-    .container:hover .close-open-icon {
-        opacity: 1;
-    }
+.container:hover .close-open-icon {
+    opacity: 1;
+}
+
+.container:hover .bayan-title {
+    font-weight: 700;
+    color: #c152c1;
+}
 
 .bayan-check {
     width: 0;
     height: 0;
     -webkit-appearance: none;
-    appearance: none; 
+    appearance: none;
     position: absolute;
 }
 
-.bayan-check:checked ~ .bayan-content{
-display: block;
+.bayan-check:checked~.bayan-content {
+    display: block;
 }
 
 /* .bayan-check:checked ~ .wrapper > .bayan-title{
@@ -55,10 +61,10 @@ display: block;
     color: #FFFFFF;
     background: #949090;
     } */
-    
-    .bayan-check:checked ~ .wrapper > .close-open-icon {
-        background-image: url(./icons/cross.svg);
-    }
+
+.bayan-check:checked~.wrapper>.close-open-icon {
+    background-image: url(./icons/cross.svg);
+}
 
 .bayans__item {
     width: 300px;
@@ -66,7 +72,7 @@ display: block;
     border: 2px solid #949090;
     border-left: none;
     border-right: none;
-    
+
 }
 
 .wrapper {
@@ -81,23 +87,24 @@ display: block;
     width: 100%;
     padding: 10px 15px;
     font-size: 1.8rem;
-    color:#0c576c;
+    color: #0c576c;
     cursor: pointer;
-
+    transition: all .3s ease-out;
 }
 
 .close-open-icon {
     opacity: 0;
     width: 40px;
     height: 40px;
-    background-image: url(icons/plus.svg);
+    background: url(icons/plus.svg) no-repeat center;
     cursor: pointer;
+    transition: all .3s ease-out;
 }
 
 .bayan-content {
     display: none;
     width: 100%;
-    padding: 10px 0;   
+    padding: 10px 0;
 }
 
 .bayan-img {
