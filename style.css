@@ -22,9 +22,9 @@ body {
 
 /*Container*/
 .container {
-    width: 270px;
+    width: 27rem;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 1.5rem;
 }
 
 .container:hover .close-open-icon {
@@ -41,7 +41,7 @@ body {
 
 .title {
     width: 100%;
-    padding: 15px 0 15px;
+    padding: 1.5rem 0 1.5rem;
     font-size: 3rem;
     font-weight: 700;
 }
@@ -71,7 +71,7 @@ body {
 
 .bayans__item {
     width: 100%;
-    border: 2px solid #949090;
+    border: 0.2rem solid #949090;
     border-left: none;
     border-right: none;
     border-bottom: none;
@@ -80,12 +80,12 @@ body {
 
 .bayans__item:hover .bayan-content {
     display: block;
-    max-width: 999px;
+    max-width: 99rem;
     transition: all 2s linear;
 }
 
 .container .bayans__item:last-child {
-    border: 2px solid #949090;
+    border: 0.2rem solid #949090;
     border-left: none;
     border-right: none;
 
@@ -106,7 +106,7 @@ body {
 .bayan-title {
     display: block;
     width: 100%;
-    padding: 10px 15px;
+    padding: 1rem 1.5rem;
     /* margin-bottom: 10px; */
     font-size: 1.8rem;
     color: #0c576c;
@@ -117,9 +117,10 @@ body {
 
 
 .close-open-icon {
+    display: block;
     opacity: 0;
-    width: 40px;
-    height: 40px;
+    width: 4rem;
+    height: 4rem;
     background: url(icons/plus.svg) no-repeat center;
     cursor: pointer;
     transition: all .5s ease-out;
@@ -128,22 +129,26 @@ body {
 .bayan-content {
     display: none;
     width: 100%;
-    max-height: 999px;
+    max-height: 99rem;
     position: relative;
-    padding: 10px 0;
+    padding: 1rem 0;
     cursor: pointer;
     transition: all 1s linear;
 }
 
+.image-link:active>.bayan-img {
 
+    transform: scale(1.2);
+
+}
 
 .bayan-img {
-    width: 190px;
+    width: 19rem;
     display: block;
     opacity: 0;
     margin: 0 auto;
     transition: 1s;
-    animation: show-image 1s;
+    animation: show-image 2s;
     animation-fill-mode: forwards;
 }
 
@@ -164,42 +169,57 @@ body {
 /*  Media query */
 @media (mi-width: 320px) {
     .container {
-        width: 270px;
+        width: 27rem;
         margin: 0 auto;
-        padding: 0 15px;
+        padding: 0 1.5rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .bayan-title {
+        font-size: 1.8rem;
+
     }
 }
 
 @media (min-width: 820px) {
     .container {
-        width: 700px;
+        width: 70rem;
         margin: 0 auto;
-        padding: 0 30px;
+        padding: 0 3rem;
     }
+
     .title {
         font-size: 5rem;
+    }
+
+    .bayan-title {
+        font-size: 3rem;
+
     }
 }
 
 @media (min-width: 1920px) {
     .container {
-        width: 1200px;
+        width: 120rem;
         margin: 0 auto;
     }
 
     .title {
         font-size: 7rem;
-        padding-bottom: 40px;
+        padding-bottom: 4rem;
     }
 
     .bayan-title {
         font-size: 4rem;
-       
+
     }
 
     .bayan-img {
         display: block;
-    
+
         margin: 0 auto;
     }
 
